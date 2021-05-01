@@ -69,7 +69,7 @@
        </font>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>RUN</string>
       </property>
      </widget>
     </item>
@@ -123,64 +123,20 @@
        <widget class="QTextEdit" name="textEdit">
         <property name="geometry">
          <rect>
-          <x>53</x>
+          <x>40</x>
           <y>0</y>
-          <width>661</width>
+          <width>671</width>
           <height>411</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <family>Arial</family>
+          <family>Nirmala UI Semilight</family>
           <pointsize>9</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
         </property>
-       </widget>
-      </widget>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="horizontalLayoutWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>790</x>
-     <y>60</y>
-     <width>201</width>
-     <height>411</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
-    <item>
-     <widget class="QScrollArea" name="scrollArea_2">
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_2">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>197</width>
-         <height>407</height>
-        </rect>
-       </property>
-       <widget class="QWidget" name="gridLayoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>201</width>
-          <height>411</height>
-         </rect>
-        </property>
-        <layout class="QGridLayout" name="gridLayout">
-         <item row="0" column="0">
-          <widget class="QTableView" name="tableView"/>
-         </item>
-        </layout>
        </widget>
       </widget>
      </widget>
@@ -249,6 +205,45 @@
       <property name="text">
        <string>Registro de Aplicacion</string>
       </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>60</y>
+     <width>201</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>197</width>
+         <height>407</height>
+        </rect>
+       </property>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-9</y>
+          <width>201</width>
+          <height>421</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </item>
    </layout>

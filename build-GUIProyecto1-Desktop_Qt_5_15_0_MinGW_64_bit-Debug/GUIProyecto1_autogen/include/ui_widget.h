@@ -11,14 +11,13 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListView>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
-#include <QtWidgets/QTableView>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -37,13 +36,6 @@ public:
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
     QTextEdit *textEdit;
-    QWidget *horizontalLayoutWidget_2;
-    QHBoxLayout *horizontalLayout_3;
-    QScrollArea *scrollArea_2;
-    QWidget *scrollAreaWidgetContents_2;
-    QWidget *gridLayoutWidget;
-    QGridLayout *gridLayout;
-    QTableView *tableView;
     QWidget *verticalLayoutWidget_2;
     QVBoxLayout *verticalLayout_2;
     QScrollArea *scrollArea_3;
@@ -52,6 +44,11 @@ public:
     QWidget *verticalLayoutWidget_3;
     QVBoxLayout *verticalLayout_3;
     QLabel *label_2;
+    QWidget *horizontalLayoutWidget_2;
+    QHBoxLayout *horizontalLayout_3;
+    QScrollArea *scrollArea_2;
+    QWidget *scrollAreaWidgetContents_2;
+    QTableWidget *tableWidget;
 
     void setupUi(QWidget *Widget)
     {
@@ -111,9 +108,9 @@ public:
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 707, 407));
         textEdit = new QTextEdit(scrollAreaWidgetContents);
         textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(53, 0, 661, 411));
+        textEdit->setGeometry(QRect(40, 0, 671, 411));
         QFont font3;
-        font3.setFamily(QString::fromUtf8("Arial"));
+        font3.setFamily(QString::fromUtf8("Nirmala UI Semilight"));
         font3.setPointSize(9);
         font3.setBold(false);
         font3.setWeight(50);
@@ -121,33 +118,6 @@ public:
         scrollArea->setWidget(scrollAreaWidgetContents);
 
         horizontalLayout_2->addWidget(scrollArea);
-
-        horizontalLayoutWidget_2 = new QWidget(Widget);
-        horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
-        horizontalLayoutWidget_2->setGeometry(QRect(790, 60, 201, 411));
-        horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget_2);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
-        scrollArea_2 = new QScrollArea(horizontalLayoutWidget_2);
-        scrollArea_2->setObjectName(QString::fromUtf8("scrollArea_2"));
-        scrollArea_2->setWidgetResizable(true);
-        scrollAreaWidgetContents_2 = new QWidget();
-        scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 197, 407));
-        gridLayoutWidget = new QWidget(scrollAreaWidgetContents_2);
-        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(0, 0, 201, 411));
-        gridLayout = new QGridLayout(gridLayoutWidget);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        gridLayout->setContentsMargins(0, 0, 0, 0);
-        tableView = new QTableView(gridLayoutWidget);
-        tableView->setObjectName(QString::fromUtf8("tableView"));
-
-        gridLayout->addWidget(tableView, 0, 0, 1, 1);
-
-        scrollArea_2->setWidget(scrollAreaWidgetContents_2);
-
-        horizontalLayout_3->addWidget(scrollArea_2);
 
         verticalLayoutWidget_2 = new QWidget(Widget);
         verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
@@ -185,6 +155,25 @@ public:
 
         verticalLayout_3->addWidget(label_2);
 
+        horizontalLayoutWidget_2 = new QWidget(Widget);
+        horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
+        horizontalLayoutWidget_2->setGeometry(QRect(790, 60, 201, 411));
+        horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget_2);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        scrollArea_2 = new QScrollArea(horizontalLayoutWidget_2);
+        scrollArea_2->setObjectName(QString::fromUtf8("scrollArea_2"));
+        scrollArea_2->setWidgetResizable(true);
+        scrollAreaWidgetContents_2 = new QWidget();
+        scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 197, 407));
+        tableWidget = new QTableWidget(scrollAreaWidgetContents_2);
+        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
+        tableWidget->setGeometry(QRect(0, -9, 201, 421));
+        scrollArea_2->setWidget(scrollAreaWidgetContents_2);
+
+        horizontalLayout_3->addWidget(scrollArea_2);
+
 
         retranslateUi(Widget);
 
@@ -194,7 +183,7 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Widget", "PushButton", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Widget", "RUN", nullptr));
         label->setText(QCoreApplication::translate("Widget", "RAM LIVE VIEW", nullptr));
         label_2->setText(QCoreApplication::translate("Widget", "Registro de Aplicacion", nullptr));
     } // retranslateUi

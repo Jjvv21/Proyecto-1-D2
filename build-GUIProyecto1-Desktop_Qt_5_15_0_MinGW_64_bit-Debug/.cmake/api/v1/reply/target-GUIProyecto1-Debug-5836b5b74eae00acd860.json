@@ -121,11 +121,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "GUIProyecto1_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "GUIProyecto1_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "GUIProyecto1_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "GUIProyecto1::@6890427a1f51a3e7e1df",
